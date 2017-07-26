@@ -83,12 +83,12 @@ a {
   align-items: center;
 }
 .main-logo {
-  padding-top: 5.5em;
+  padding-top: 5em;
   flex: 1;
   max-width: 80%;
   margin: auto;
   margin-bottom: 0;
-  min-height: calc(100vh - 180px);
+  min-height: calc(100vh - 200px);
   vertical-align: middle;
 }
 
@@ -131,8 +131,8 @@ footer {
 
   /* Main Content */
   .main-logo {
-    padding-top: 8em;
-    min-height: calc(100vh - 230px);
+    padding-top: 7em;
+    min-height: calc(100vh - 280px);
   }
   .main-text {
     margin-top: 4em;
@@ -140,6 +140,9 @@ footer {
   }
   footer {
     font-size: 1.5em;
+  }
+  footer .fa-phone {
+    display: none;
   }
   /* Hamburger */
   .hamburger {
@@ -163,5 +166,70 @@ footer {
   and (max-device-width: 1024px)
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
+  .main-logo {
+    padding-top: 3em;
+    max-width: 70%;
+    min-height: calc(100vh - 220px);
+  }
+  .para1 {
+    font-size: 2em;
+  }
+  .para2 {
+    font-size: 1.8em;
+  }
+  /* Footer */
+  footer {
+    font-size: 1.5em;
+  }
+  footer .fa-phone {
+    display: none;
+  }
+  /* The sidebar paragraph text */
+  .sidenav p {
+    margin-left: 4em;
+    margin-right: 4em;
+    font-size: 1.5em;
+  }
+}
 
+/* Laptops and bigger */
+@media screen and (min-device-width: 1025px) {
+  /* Hamburger Icon */
+  .hamburger {
+    padding: 1em;
+  }
+  /* Main Content */
+  .main-logo {
+    padding-top: 2em;
+    max-width: 50%;
+    min-height: calc(100vh - 220px);
+    vertical-align: middle;
+  }
+
+  .logo-blue {
+    max-width: 90%;
+  }
+  .main-text {
+    margin-top: 4em;
+  }
+  .para1 {
+    font-size: 2em;
+  }
+  .para2 {
+    font-size: 1.8em;
+    padding-top: .5em;
+  }
+  /* Footer*/
+  footer .row {
+    width: 100%;
+  }
+  footer .fa-phone {
+    display: none;
+  }
+  /* The sidebar paragraph text */
+  .sidenav p {
+    margin-left: 6em;
+    margin-right: 6em;
+    font-size: 1.5em;
+  }
 }
