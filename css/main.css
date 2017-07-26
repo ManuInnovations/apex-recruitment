@@ -67,8 +67,8 @@ a {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s;
-  padding: 20px;
+    transition: 0.5s;
+    padding: 20px;
 }
 
 /* Main Content */
@@ -88,7 +88,7 @@ a {
   max-width: 80%;
   margin: auto;
   margin-bottom: 0;
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 240px);
   vertical-align: middle;
 }
 
@@ -193,6 +193,7 @@ footer i {
     margin-right: 4em;
     font-size: 1.5em;
   }
+
 }
 
 /* Laptops and bigger */
