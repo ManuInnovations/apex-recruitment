@@ -10,6 +10,60 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+/* Navigation Hamburger */
+ul {
+    margin: 0 0 1.5em;
+}
+
+ul {
+    list-style: disc;
+    padding: 0 0 0 20px;
+}
+
+header {
+    background: white;
+    padding: 15px 20px;
+}
+
+        /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
+        header:before,
+        header:after {
+            content:"";
+            display:table;
+        }
+
+        header:after {
+            clear:both;
+        }
+
+        /* For IE 6/7 (trigger hasLayout) */
+        header {
+            zoom:1;
+        }
+
+a.to-nav {
+    float: right;
+    color: #fff;
+    background: #4e4e4e;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+    height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+a.to-nav:hover,
+a.to-nav:focus {
+    color: #1c1c1c;
+    background: #ccc;
+}
+
 /* Main Content */
 
 .container {
@@ -23,12 +77,12 @@ body {
   align-items: center;
 }
 .main-logo {
-  padding-top: 8em;
+  padding-top: 4em;
   flex: 1;
   max-width: 80%;
   margin: auto;
   margin-bottom: 0;
-  min-height: calc(100vh - 120px);
+  min-height: calc(100vh - 180px);
   vertical-align: middle;
 }
 
@@ -36,14 +90,14 @@ body {
   max-width: 90%;
 }
 .main-text {
-  margin-top: 6em;
+  margin-top: 3em;
 }
 .para1 {
   font-size: 1.7em;
 }
 .para2 {
   font-size: 1.3em;
-  padding-top: 2em;
+  padding-top: 1em;
 }
 
 
