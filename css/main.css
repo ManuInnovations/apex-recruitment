@@ -1,0 +1,53 @@
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* Main Content */
+
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.main-logo {
+  padding-top: 7em;
+  flex: 1;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 0;
+  min-height: calc(100vh - 120px);
+  vertical-align: middle;
+}
+.main-text {
+  margin-top: 4em;
+}
+.logo-blue {
+  max-width: 90%;
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+  max-width: 200px;
+  border: solid 1px #337ab7;
+
+}
+
+/* Footer */
+
+footer {
+    padding: 5px 0;
+}
