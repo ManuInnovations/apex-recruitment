@@ -9,6 +9,9 @@ body {
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+a {
+  text-decoration: none;
+}
 
 /* The side navigation menu */
 .sidenav {
