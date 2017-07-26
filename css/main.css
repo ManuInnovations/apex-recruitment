@@ -72,7 +72,6 @@ a {
 }
 
 /* Main Content */
-
 .container {
   width: 100%;
   display: flex;
@@ -109,7 +108,6 @@ a {
 
 
 /* Custom Horizontal Rule */
-
 hr.small {
   max-width: 200px;
   border: solid 1px #337ab7;
@@ -117,7 +115,53 @@ hr.small {
 }
 
 /* Footer */
-
 footer {
     padding: 5px 0;
+}
+
+/* Media Queries */
+
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  /* Main Content */
+  .main-logo {
+    padding-top: 8em;
+    min-height: calc(100vh - 230px);
+  }
+  .main-text {
+    margin-top: 4em;
+    font-size: 1.5em;
+  }
+  footer {
+    font-size: 1.5em;
+  }
+  /* Hamburger */
+  .hamburger {
+    padding: 2em;
+  }
+  /* The sidebar menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    font-size: 2em;
+  }
+  /* The sidebar paragraph text */
+  .sidenav p {
+    padding: 2em;
+    font-size: 1.5em;
+  }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
 }
