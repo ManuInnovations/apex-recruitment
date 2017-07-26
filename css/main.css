@@ -10,58 +10,62 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-/* Navigation Hamburger */
-ul {
-    margin: 0 0 1.5em;
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #337ab7; /* Blue*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-ul {
-    list-style: disc;
-    padding: 0 0 0 20px;
+.hamburger {
+  width: 100%;
+  text-align: right;
+  color: #337ab7;
+  padding-top: 1em;
 }
 
-header {
-    background: white;
-    padding: 15px 20px;
-}
-
-        /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
-        header:before,
-        header:after {
-            content:"";
-            display:table;
-        }
-
-        header:after {
-            clear:both;
-        }
-
-        /* For IE 6/7 (trigger hasLayout) */
-        header {
-            zoom:1;
-        }
-
-a.to-nav {
-    float: right;
-    color: #fff;
-    background: #4e4e4e;
+/* The sidebar menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    padding: 0 10px;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 22px;
-    height: 22px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
+    font-size: 2em;
+    color: white;
+    display: block;
+    transition: 0.3s
 }
 
-a.to-nav:hover,
-a.to-nav:focus {
-    color: #1c1c1c;
-    background: #ccc;
+/* The sidebar paragraph text */
+.sidenav p {
+  color: white;
+  text-align: left;
+  margin: 1em;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: grey;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
 }
 
 /* Main Content */
@@ -77,7 +81,7 @@ a.to-nav:focus {
   align-items: center;
 }
 .main-logo {
-  padding-top: 4em;
+  padding-top: 5.5em;
   flex: 1;
   max-width: 80%;
   margin: auto;
@@ -90,7 +94,7 @@ a.to-nav:focus {
   max-width: 90%;
 }
 .main-text {
-  margin-top: 3em;
+  margin-top: 4em;
 }
 .para1 {
   font-size: 1.7em;

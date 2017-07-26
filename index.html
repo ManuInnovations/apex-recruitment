@@ -27,6 +27,23 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' crossorigin='anonymous'></script>
 
+  <!-- Sidebar Slide Navigation -->
+  <script>
+    /* Set the width of the side navigation to 250px */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "300px";
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    /* Show the About info in sidebar */
+    function toggle(element) {
+        document.getElementById(element).style.display = (document.getElementById(element).style.display == "none") ? "" : "none";
+    }
+  </script>
 
 
   <!-- Custom CSS -->
@@ -40,24 +57,29 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
 
+
 </head>
 
 <body>
   <div class='container'>
 
-    <!-- Navigation Hamburger -->
-    <header>
-        <a href='#'><i class='fa fa-bars fa-fw fa-2x'></i></a>
-        <a class='to-nav' href='primary-nav'>Menu</a>
-    </header>
+    <!-- Sliding Sidebar -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:toggle('about')">About</a>
+      <p id='about' style='display:none;' >
+        Apex Recruitment is a recruitment service for the civil and construction industry. We offer a personable service to our clients and candidates. Our major focus is on Health and Safety, which we implement across our company and the construction sites we deal with. We cover Demolition, Residential, Commercial and Civil construction.  Apex is currently based on the North Shore and covers all of Auckland city. We are 100% New Zealand owned and operated.
+      </p>
+      <a href="javascript:toggle('contact')">Contact Us</a>
+      <p id='contact' style='display:none;' >
+        If you are a business wanting to hire workers, or looking for work yourself please give us a ring on (09) 390 3947 or email apex@apexrecruitment.co.nz.
+      </p>
 
-    <nav id='primary-nav'>
-      <ul>
-        <li>About Us: lkjlkjlkajlkfdjlaksjflkjd lkjsdfslk jkjdf lkj  ksjdf lkj slkdsjf skdjflskjdfljsdkj.</li>
-        <li>Get In Touch: lkjlkjdflkajldskjfslkjdflksjflkjlskjflskdjflskjlkdjlksjdflksjdlfksjlkdjfklsjdfkj</li>
-      </ul>
-    </nav>
 
+    </div>
+
+    <!-- Hamburger -->
+    <div class='hamburger'><i class='fa fa-bars fa-fw fa-2x' onclick="openNav()"></i></div>
 
     <!-- Main Content -->
 
@@ -69,7 +91,6 @@
       </div>
     </div>
   </div>
-
 
   <!-- Footer -->
   <footer>
