@@ -9,10 +9,70 @@ body {
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+a {
+  text-decoration: none;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #337ab7; /* Blue*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.hamburger {
+  width: 100%;
+  text-align: right;
+  color: #337ab7;
+  padding-top: 1em;
+}
+
+/* The sidebar menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+    display: block;
+    transition: 0.3s
+}
+
+/* The sidebar paragraph text */
+.sidenav p {
+  color: white;
+  text-align: left;
+  margin: 1em;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: grey;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
 
 /* Main Content */
-
-.main-container {
+.container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -23,23 +83,31 @@ body {
   align-items: center;
 }
 .main-logo {
-  padding-top: 7em;
+  padding-top: 5em;
   flex: 1;
   max-width: 80%;
   margin: auto;
   margin-bottom: 0;
-  min-height: calc(100vh - 120px);
+  min-height: calc(100vh - 200px);
   vertical-align: middle;
+}
+
+.logo-blue {
+  max-width: 90%;
 }
 .main-text {
   margin-top: 4em;
 }
-.logo-blue {
-  max-width: 90%;
+.para1 {
+  font-size: 1.7em;
+}
+.para2 {
+  font-size: 1.3em;
+  padding-top: 1em;
 }
 
-/* Custom Horizontal Rule */
 
+/* Custom Horizontal Rule */
 hr.small {
   max-width: 200px;
   border: solid 1px #337ab7;
@@ -47,7 +115,121 @@ hr.small {
 }
 
 /* Footer */
-
 footer {
     padding: 5px 0;
+}
+
+/* Media Queries */
+
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  /* Main Content */
+  .main-logo {
+    padding-top: 7em;
+    min-height: calc(100vh - 280px);
+  }
+  .main-text {
+    margin-top: 4em;
+    font-size: 1.5em;
+  }
+  footer {
+    font-size: 1.5em;
+  }
+  footer .fa-phone {
+    display: none;
+  }
+  /* Hamburger */
+  .hamburger {
+    padding: 2em;
+  }
+  /* The sidebar menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    font-size: 2em;
+  }
+  /* The sidebar paragraph text */
+  .sidenav p {
+    padding: 2em;
+    font-size: 1.5em;
+  }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .main-logo {
+    padding-top: 3em;
+    max-width: 70%;
+    min-height: calc(100vh - 220px);
+  }
+  .para1 {
+    font-size: 2em;
+  }
+  .para2 {
+    font-size: 1.8em;
+  }
+  /* Footer */
+  footer {
+    font-size: 1.5em;
+  }
+  footer .fa-phone {
+    display: none;
+  }
+  /* The sidebar paragraph text */
+  .sidenav p {
+    margin-left: 4em;
+    margin-right: 4em;
+    font-size: 1.5em;
+  }
+}
+
+/* Laptops and bigger */
+@media screen and (min-device-width: 1025px) {
+  /* Hamburger Icon */
+  .hamburger {
+    padding: 1em;
+  }
+  /* Main Content */
+  .main-logo {
+    padding-top: 2em;
+    max-width: 50%;
+    min-height: calc(100vh - 220px);
+    vertical-align: middle;
+  }
+
+  .logo-blue {
+    max-width: 90%;
+  }
+  .main-text {
+    margin-top: 4em;
+  }
+  .para1 {
+    font-size: 2em;
+  }
+  .para2 {
+    font-size: 1.8em;
+    padding-top: .5em;
+  }
+  /* Footer*/
+  footer .row {
+    width: 100%;
+  }
+  footer .fa-phone {
+    display: none;
+  }
+  /* The sidebar paragraph text */
+  .sidenav p {
+    margin-left: 6em;
+    margin-right: 6em;
+    font-size: 1.5em;
+  }
 }
