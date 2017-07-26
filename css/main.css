@@ -23,7 +23,7 @@ body {
   align-items: center;
 }
 .main-logo {
-  padding-top: 7em;
+  padding-top: 8em;
   flex: 1;
   max-width: 80%;
   margin: auto;
@@ -31,12 +31,21 @@ body {
   min-height: calc(100vh - 120px);
   vertical-align: middle;
 }
-.main-text {
-  margin-top: 4em;
-}
+
 .logo-blue {
   max-width: 90%;
 }
+.main-text {
+  margin-top: 6em;
+}
+.para1 {
+  font-size: 1.7em;
+}
+.para2 {
+  font-size: 1.3em;
+  padding-top: 2em;
+}
+
 
 /* Custom Horizontal Rule */
 
