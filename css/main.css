@@ -67,7 +67,7 @@ a {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-    transition: margin-left .5s;
+    transition: 0.5s;
     padding: 20px;
 }
 
@@ -193,6 +193,7 @@ footer i {
     margin-right: 4em;
     font-size: 1.5em;
   }
+
 }
 
 /* Laptops and bigger */
